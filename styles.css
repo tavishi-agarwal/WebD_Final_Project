@@ -1,0 +1,136 @@
+body {
+    font-family: helvetica, sans-serif;
+    margin: 0; 
+    display: flex; 
+    background-image:url(https://plus.unsplash.com/premium_photo-1727730047398-49766e915c1d?q=80&w=1512&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    display: flex;                                          
+    flex-grow: 1;                                         
+    
+}
+.sidebar ul {
+    opacity: 100%;
+    list-style-type: none;                                          
+     padding: 0;                      
+}
+.sidebar li {
+    display: flex;                                 
+    align-items: center;                             
+    padding: 10px 0;                                  
+}
+.sidebar {
+    background-color: rgba(2, 21, 38, 1) !important; /* Fully opaque background */
+    margin-top: 15px;
+    width: 70px;
+    height: 560px;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    z-index: 1; /* Ensure it remains above any changes to the body */
+    position: relative;
+}
+.sidebar a { color: #f9f9f9;                                      
+    text-decoration: none;
+
+}
+.sidebar a:hover {
+    color: #b0c4de;                                            
+}
+.main-content {
+    flex-grow: 1;                                             
+    padding: 20px;                                            
+    display: flex;                                              
+    flex-direction: column;                           
+    align-items: flex-start;                            
+    }
+
+.search-bar {
+    margin-bottom: 5px;                                         
+}
+
+.search-bar input {
+    width: 700px;                                       
+    padding: 10px;                                                                               
+    border: 1px solid #ccc;                                                 
+    border-radius: 5px;                                                     
+}
+.search-bar {
+    display: flex; /* Arrange input and button in a row */
+    align-items: center;
+    border: 2px solid #ccc; /* Border around the entire search bar */
+    border-radius: 8px; /* Rounded corners for the entire search bar */
+    overflow: hidden; /* Prevent overflow outside the rounded border */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.search-bar input {
+    flex: 1; /* Input takes up remaining space */
+    padding: 10px; /* Inner spacing */
+    border: none; /* Remove input's default border */
+    outline: none; /* Remove focus outline */
+    font-size: 16px; /* Consistent font size */
+}
+
+.search-bar button {
+    background: linear-gradient(135deg, #3498db, #2980b9); /* Gradient background */
+    border: none; /* Remove default border */
+    color: white; /* White text color */
+    padding: 10px 20px; /* Padding for size */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+.search-bar button:hover {
+    background: linear-gradient(135deg, #2980b9, #3498db); /* Reverse gradient on hover */
+}
+
+.search-bar button:active {
+    background: #1d6fa5; /* Solid color on click */
+}
+
+
+
+.city-temp {
+    flex-grow: 1;                           
+}
+
+.weather-icon img {
+    width: 80px;                       
+    height: auto;         /*maintains aspect ratio*/                              
+}
+
+
+.weather-container {
+    background-color: rgba(2, 21, 38,1) !important; /* Fully opaque background */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 1; /* Keep above background changes */
+    position: relative;
+    margin: auto;
+}
+
+#weather-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.parameter {
+    width: 150px;
+    text-align: center;
+    padding: 10px;
+    background:  rgba(0, 31, 63, 0.7);
+    border-radius: 8px;
+}
+
+.parameter img {
+    width: 50px;
+    height: 50px;
+}

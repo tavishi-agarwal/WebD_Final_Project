@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <img src="C:\Users\delis\webd project\weather.png" alt="Weather Icon" class="icon" width="24" height="24">
+                    <li ><a href="page1.html">Weather</a></li>
+                    <img src="C:\Users\delis\webd project\zgreens.png" alt="Weather Icon" class="icon" width="24" height="24">
+        
+                    <li><a href="#">Cities</a></li>
+                    <img src="C:\Users\delis\webd project\treasure-map.png" alt="Weather Icon" class="icon" width="24" height="24">
+        
+                    <li><a href="page3.html">Map</a> </li>
+                    <img src="C:\Users\delis\webd project\zcontrol.png" alt="Weather Icon" class="icon" width="24" height="24">
+        
+                    <li><a href="#">Settings</a></li>
+                </ul>
+           </nav>
+        </aside>
+        <main class="main-content">
+            <div class="search-bar">
+                <input type="text" id="city-input" placeholder="Enter city name">
+                <button id="get-weather">Get Weather</button>
+            </div>
+            <div class="weather-container">
+                <h1>Weather Dashboard</h1>
+                <div id="weather-info"></div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
